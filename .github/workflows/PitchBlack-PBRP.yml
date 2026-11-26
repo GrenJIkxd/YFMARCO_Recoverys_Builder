@@ -126,7 +126,7 @@ jobs:
         else
           echo "guava module missing after sync. Cloning fallback project..."
           rm -rf external/guava
-          git clone --depth=1 https://android.googlesource.com/platform/external/guava external/guava
+          git clone --depth=1 -b android-14.0.0_r17 https://android.googlesource.com/platform/external/guava external/guava
         fi
       
     - name: Clone Device Tree
